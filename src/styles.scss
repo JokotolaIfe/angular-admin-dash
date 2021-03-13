@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./assets/fonts/source/SourceSansPro-Regular.ttf") format("truetype") !important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Sans";
+  src: url("./assets/fonts/source/SourceSansPro-Regular.ttf") format("truetype") !important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("./assets/fonts/nunito/NunitoSans-Regular.ttf") format("truetype") !important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("./assets/fonts/nunito/NunitoSans-Regular.ttf") format("truetype") !important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "~ng-uikit-pro-standard/assets/scss/core/colors";
+@import "~ng-uikit-pro-standard/assets/scss/core/variables";
+@import "~ng-uikit-pro-standard/assets/scss/core/variables-pro";
+
+@import "~ng-uikit-pro-standard/assets/scss/sections-pro/_contacts-pro.scss";
+@import "~ng-uikit-pro-standard/assets/scss/sections-pro/_magazine-pro.scss";
+@import "~ng-uikit-pro-standard/assets/scss/sections-pro/_pricing-pro.scss";
+@import "~ng-uikit-pro-standard/assets/scss/sections-pro/_social-pro.scss";
+@import "~ng-uikit-pro-standard/assets/scss/sections-pro/_team-pro.scss";
+@import "~ng-uikit-pro-standard/assets/scss/sections-pro/_templates-pro.scss";
+@import "~ng-uikit-pro-standard/assets/scss/sections-pro/_testimonials-pro.scss";
+@import "~ng-uikit-pro-standard/assets/scss/addons-pro/_blog-pro.scss";
+@import "~ng-uikit-pro-standard/assets/scss/addons-pro/_chat-pro.scss";
+@import "~ng-uikit-pro-standard/assets/scss/addons-pro/_ecommerce-pro.scss";
+@import "~ng-uikit-pro-standard/assets/scss/addons-pro/_steppers-pro.scss";
+@import "~ng-uikit-pro-standard/assets/scss/addons-pro/_timeline-pro.scss";
+@import "~ng-uikit-pro-standard/assets/scss/addons-pro/_timelines-pro.scss";
+
+:root {
+  --purple: #462686;
+  --dark: #454545;
+  --gray: #333;
+}
+
+app-sidenav{
+  nav, .nav, .side-nav{
+    background: #EFF5FB !important;
+    box-shadow: inset -10px 0px 20px rgba(194, 203, 217, 0.15) !important;
+    border-radius: 0px !important;
+  }
+  
+  .side-nav .collapsible .card .card-header a h5 {
+    color: unset !important;
+  }  
+}
+
+.logo-wrapper{
+  border: none !important;
+}
+
+nav, .navbar{
+  background: none !important;
+  box-shadow: none !important;
+} 
+
+// app-header{
+//   @media screen and (min-width: 999px) {
+//     mdb-navbar{
+//         padding-left: 220px !important;
+//         height: 103px !important;
+//         background: none !important;
+//     }
+//   } 
+// }  
+/* You can add global styles to this file, and also import other style files */
+@media screen and (min-width: 768px) {
+  app-header{
+    nav{
+      padding-right: 5.5rem !important;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  app-header{
+    .card_sm{
+      float: right !important;
+      margin-bottom: 10px;
+    }
+
+  }
+  app-dashboard{
+    .body{
+      main{
+        .cont{
+          margin-top: 5rem;
+        }
+      }
+    }
+  }
+};
+
+
+@media screen and (min-width:1000px) and (max-width:1440px){
+    app-dashboard{
+      main{
+        padding-left: 220px !important;
+      }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+  app-header{
+    nav{
+      padding-left: 0px !important;
+      margin-left: 0px !important;
+    }
+  }
+}
+
+
+app-stats{
+  .change_background{
+    .card{
+      background: linear-gradient(0deg, #0F9CDA 26.48%, #00C49A 175.16%) !important;
+      border-radius: 10px;
+      *{
+        color: white !important;
+      }
+    }
+  }
+}

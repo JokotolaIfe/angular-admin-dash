@@ -1,0 +1,52 @@
+
+<!--Double navigation-->
+<header>
+
+    <app-sidenav></app-sidenav>
+    <!-- Navbar -->
+    <mdb-navbar style="background: none !important;" SideClass="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav"
+    [containerInside]="false">
+        <!-- <mdb-navbar-brand><a class="navbar-brand" href="#">Navbar</a></mdb-navbar-brand> -->
+       
+        <div class="display-left">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="card card_sm">
+                        <img class="card_icons" src="../../../assets/images/bell.png">
+                        <div class="row">
+                            <div class="col-8 text-left">
+                                <div class="title">Notifications Center</div>
+                                <div class="value">You have 2 unread notifications</div>
+                            </div>
+                            <div class="col-4 text-right">
+                                <div class="card_stat1">
+                                    <span>2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="card card_sm">
+                        <img class="card_icons" src="../../../assets/images/user.png">
+                        <div class="row">
+                            <div class="col-8 text-left">
+                                <div class="title">Chidinma Nwanya</div>
+                                <div class="value">Vanity By Juls</div>
+                            </div>
+                            <div class="col-4 text-right">
+                                <div class="card_stat2 text-center" style="cursor: pointer;" routerLink="/login">
+                                    <mdb-icon fas icon="power-off"></mdb-icon>
+                                    <div>Log out</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mdb-navbar>
+   
+  </header>
+  <!--/.Double navigation-->
+  

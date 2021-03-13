@@ -1,0 +1,59 @@
+
+
+<div class="body">
+  <app-header></app-header>
+
+  <main style="margin-left: 0rem !important">
+    <div class="container-fluid cont">
+
+      <!-- FIRST ROW -->
+      <div class="row" style="margin-top: 0.8rem;"> 
+        <div class="col-lg-6 col-sm-12 text-left">
+          <div class="title"><b>Dashboard</b></div>
+        </div>
+        <div class="col-lg-6 col-sm-12 text-right">
+          <div class="title_details float-right">
+              <div class="row">
+                <div class="col-7 text-left cont_1">
+                  <div class="wench_cont"> <mdb-icon fas icon="wrench"></mdb-icon> </div>
+                  <span>Customize Dashboard</span>
+                </div>
+                <div class="col-5 text-right">
+                  <span style="color: black; font-size: 14px; font-weight: 500;">Mon, Jun 22, 2020</span>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECOND ROW -->
+      <div class="row" style="margin-top: 1rem;">
+        <div class="col-lg-6 col-md-6 col-sm-12 text-sm-center text-lg-left text-md-left">
+          <div class="intro_card_1">
+            <mdb-icon fas icon="times" style="color: white;"></mdb-icon>
+            <img src="../../../assets/images/card0.png" class="card_img_1">
+            <div class="wlcm text-left">WELCOME BACK! CHIDINMA</div>
+            <div class="wlcm_details text-left">
+              See overview of analytics and reporting metrics and a lot more interesting stuffs you can do here.
+            </div>
+            <button style="text-align: center !important;"><span class="t-center">Take A Tour</span></button>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 text-right">
+          <div class="intro_card_2">
+            <img src="../../../assets/images/card1.png" class="card_img_1">
+            <div class="wlcm text-left">OPTIMIZED APPLICATION PROCESSING</div>
+            <div class="wlcm_details text-left">
+              We’ve optimized the system to process your application as fast as possible. Click on the button below to get started.
+            </div>
+            <button style="text-align: center !important;"><span class="t-center">New Request</span></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- THIRD ROW -->
+      <app-stats [capex]="capex" [opex]="opex" [asset]="asset" [asset_background_class]="asset_background_class"></app-stats>
+
+    </div>
+  </main>
+</div>

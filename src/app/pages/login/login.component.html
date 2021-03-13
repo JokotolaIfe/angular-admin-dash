@@ -1,0 +1,22 @@
+<div id="login" class="body">
+    <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-no bg-black">
+
+        </div>
+        <div class="col-lg-4 col-sm-12 bg-white">
+            <div class="container">
+                <div class="login-box">
+                    <div class="text-left my-5">
+                        <div class="circle_sm"><span>5</span></div>
+                        <div class="title">Express Lands</div>
+                    </div>
+                    <div class="box_title">Login to <br>your account</div>
+                    <div class="instruction">Welcome back!Please login to your account</div>
+                    <input [(ngModel)]="username" placeholder="Enter Username" value="KTS12562892" />
+                    <input [(ngModel)]="password" placeholder="Enter Password"/>
+                    <button (click)="login(username, password)">LOG IN</button>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>

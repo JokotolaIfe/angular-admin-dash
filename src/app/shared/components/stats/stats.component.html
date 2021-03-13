@@ -1,0 +1,154 @@
+<div class="row" style="margin-top: 2rem;">
+    <div class="col-lg-4 col-md-6 col-sm-12 text-left">
+        <div class="card">
+            <div>
+                <div class="float-left title">Annual Play Budget</div>
+                <div class="float-right">
+                    <div class="btn-group" mdbDropdown>
+                        <button type="button" mdbBtn class="dropdown-toggle waves-light" mdbWavesEffect>This Year</button>                       
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <div class="divider dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="summary">Summary</div>
+
+                    <div class="progress blue" style="background-color: transparent !important;">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">{{capex?.label}}</div>
+                    </div>
+
+
+            <div class="row" style="margin-top: 2rem !important;">
+                <div class="col-6">
+                    <div class="key">Total Play (NGN)</div>
+                    <div class="value my-1">{{capex_total | number}}</div>
+                </div>
+                <div class="col-6"> 
+                    <div class="key"><mdb-icon style="color: #1B5BAC;" fas icon="circle"></mdb-icon> Total Spent</div>
+                    <div class="key my-1"><mdb-icon far icon="circle"></mdb-icon> Balance</div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 1rem !important;">
+                <div class="col-6">
+                    <div class="key">Total Spent (NGN)</div>
+                    <div class="value my-1">{{capex?.spent | number}}</div>
+                </div>
+                <div class="col-6">
+                    <div class="key">Balance (NGN)</div>
+                    <div class="value my-1">{{capex?.balance | number}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+            <div>
+                <div class="float-left title">Annual Play Budget</div>
+                <div class="float-right">
+                    <div class="btn-group" mdbDropdown>
+                        <button type="button" mdbBtn class="dropdown-toggle waves-light" mdbWavesEffect>This Year</button>                       
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <div class="divider dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="summary">Summary</div>
+
+                    <div class="progress orange" style="background-color: transparent !important;">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">{{opex?.label}}</div>
+                    </div>
+
+
+            <div class="row" style="margin-top: 2rem !important;">
+                <div class="col-6">
+                    <div class="key">Total Play (NGN)</div>
+                    <div class="value my-1">{{opex_total | number}}</div>
+                </div>
+                <div class="col-6"> 
+                    <div class="key"><mdb-icon style="color: #FF6542;" fas icon="circle"></mdb-icon> Total Spent</div>
+                    <div class="key my-1"><mdb-icon far icon="circle"></mdb-icon> Balance</div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 1rem !important;">
+                <div class="col-6">
+                    <div class="key">Total Spent (NGN)</div>
+                    <div class="value my-1">{{opex?.spent | number}}</div>
+                </div>
+                <div class="col-6">
+                    <div class="key">Balance (NGN)</div>
+                    <div class="value my-1">{{opex?.balance | number}}</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12" [ngClass]="{'change_background' : asset_background_class !== 'default'}">
+        <!-- change_background class can be found in the style.css -->
+        <div class="card">
+            <div>
+                <div class="float-left title">Cards Count</div>     
+            </div>
+            <div class="summary my-1">Summary</div>
+
+                    <div class="progress yellow" style="background-color: transparent !important;">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">{{asset?.label}}</div>
+                    </div>
+
+            <div class="stats_card" style="margin-top: 1rem !important;">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="key">Total Cards</div>
+                        <div class="value my-1">{{asset_total | number}}</div>
+                    </div>
+                    <div class="col-6"> 
+                        <div class="key"><mdb-icon style="color: #F6AE2D !important;" size="sm" style="font-size: 9px !important;" fas icon="circle"></mdb-icon> In-use</div>
+                        <div class="key my-2"><mdb-icon far size="sm" style="font-size: 9px !important;" icon="circle"></mdb-icon> In-active</div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 1rem !important;">
+                    <div class="col-6">
+                        <div class="key">Cards in-use</div>
+                        <div class="value my-1">{{asset?.use | number}}</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="key">In-active</div>
+                        <div class="value my-1">{{asset?.active | number}}</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>

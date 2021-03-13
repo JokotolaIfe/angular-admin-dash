@@ -1,0 +1,83 @@
+@import url('https://fonts.google.com/specimen/Nunito+Sans?preview.text_type=custom#standard-styles');
+@import url('https://fonts.google.com/specimen/Source+Sans+Pro?preview.text_type=custom');
+
+.display-left{
+    display: inline;
+    margin-right: 20px;
+    margin-left: auto !important
+}
+.card{
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(184, 193, 209, 0.1);
+    border-radius: 10px;
+    height: 71px;
+    width: 262px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 22px;
+    padding-right: 12px;
+ 
+    .card_icons{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .title{
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        color: #19304D;
+    }
+
+    .value{
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 10px;
+        color: #383F51;
+        line-height: 14px;
+        margin-top: 2px;
+    }
+
+    .card_stat1{
+        background: #FF6542;
+        border-radius: 10px;
+        vertical-align: middle;
+        text-align: center;
+        width: 44px; height: 44px;
+        padding-top: 8px;
+        span{
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
+        }
+    }
+
+    .card_stat2{
+        background: #133F77;
+        border-radius: 10px;
+        text-align: left;
+        width: 44px; height: 44px;
+        padding-top: 3px;
+        mdb-icon{
+            font-size: 14px !important;
+            color: white !important;
+        }
+        div{
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 9px;
+            line-height: 12px;
+            color: #FFFFFF;
+        }
+    }
+}
+
+

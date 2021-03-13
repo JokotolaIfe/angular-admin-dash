@@ -1,0 +1,199 @@
+.body{
+    background: #F2F7FC;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.cont{
+    .title{
+        // font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        color: #19304D;
+        font-weight: bolder;
+    }
+    .title_details{
+        width: 420px;
+        margin-right: 0;
+        margin-left: auto;
+        color: #1B5BAC;
+        .wench_cont{
+            background: #D9F2FC;
+            border-radius: 5px;
+            width: 30px; height: 30px;
+            text-align: center;
+            padding:5px;
+            display: inline-block;
+            margin-right: 5px;
+            mdb-icon{
+                color: #1B5BAC !important;
+            };
+        }
+        .cont_1{
+            border-right: 1px solid #0000004e !important;
+        }
+    }
+ 
+    .intro_card_1{
+        // width: 95%;
+        margin-left: 0;
+        // margin-right: auto;
+        height: 224px;
+        padding: 23px 31px;
+        background: linear-gradient(147.87deg, #133F77 26.36%, #0F9CDA 125.59%);
+        border-radius: 10px;
+        position: relative;
+
+        .wlcm{
+            font-style: normal;
+            // font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            color: #78C2ED;
+        }
+
+        .wlcm_details{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            display: flex;
+            font-weight: lighter;
+            align-items: center;
+            color: #FFFFFF;
+            margin-top: 15px;
+        }
+
+        button{
+            background: #FFFFFF;
+            box-shadow: 0px 10px 20px rgba(16, 60, 116, 0.3);
+            border-radius: 6px;
+            margin-left: 0;
+            height: 44px;
+            width: 138px;
+            border: none;
+            text-align: center !important;
+            margin-top: 20px;
+            margin-right: auto;
+            .t-center{
+                margin: auto;
+                // font-family: Nunito Sans;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 20px;
+                align-items: center;
+                text-align: center;
+                color: #1B5BAC;
+            }
+        }
+
+        .card_img_1{
+            position: absolute;
+            bottom: -10px;
+            right: 0;
+            top: auto;
+            left: auto;
+            height: 130px;
+        }
+
+        mdb-icon{
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    .intro_card_2{
+        margin-right: 0px;
+        // margin-top: 10px;
+        // margin-bottom: 10px;
+        // margin-left: auto;
+        // width: 95%;
+        height: 224px;
+        padding: 23px 31px;
+        background: #E5EEFB;
+        border-radius: 10px;
+        position: relative;
+
+        .wlcm{
+            font-style: normal;
+            // font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            color: #133F77;
+        }
+
+        .wlcm_details{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            display: flex;
+            font-weight: lighter;
+            align-items: center;
+            color: #000;
+            margin-top: 15px;
+        }
+
+        button{
+            background: #1B5BAC;
+            box-shadow: 0px 10px 20px rgba(16, 60, 116, 0.3);
+            border-radius: 6px;
+            margin-left: 0;
+            height: 44px;
+            width: 138px;
+            border: none;
+            text-align: center !important;
+            margin-top: 20px;
+            margin-right: auto;
+            .t-center{
+                margin: auto;
+                // font-family: Nunito Sans;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 20px;
+                align-items: center;
+                text-align: center;
+                color: #FFF;
+            }
+        }
+
+        .card_img_1{
+            position: absolute;
+            bottom: -10px;
+            right: 0;
+            top: auto;
+            left: auto;
+            height: 130px;
+        }
+
+        mdb-icon{
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+
+// @media screen and (min-width: 999px) {
+//     .p222{
+//         padding-left: 220px !important;
+//     }
+//   } 
